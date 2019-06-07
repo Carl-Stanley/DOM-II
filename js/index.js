@@ -81,3 +81,22 @@ img.addEventListener('dblclick', function(event){
     alert('Being clicked!');
 
 });
+
+// nested events
+img.addEventListener('mouseover',function(event){
+
+       img.style.transition = '.5s'; 
+       img.hidden = true;
+       event.preventDefault();
+       
+       img.addEventListener('mouseleave',function(event){
+        
+        img.style.transition = '.5s'; 
+        img.hidden = false;
+        event.preventDefault(); 
+ 
+     });
+
+
+ });
+
