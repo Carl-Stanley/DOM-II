@@ -84,12 +84,10 @@ img.addEventListener('dblclick', function(event){
 
 // nested events
 img.addEventListener('mouseover',function(event){
-
+    
        img.style.transition = '.5s'; 
        img.style.display = 'none';
-       event.preventDefault();
-     
-      
+       event.preventDefault();      
        
      img.addEventListener('mouseleave',function(event){
         
