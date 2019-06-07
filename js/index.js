@@ -1,7 +1,6 @@
 // Your code goes here
 
 // Let's mess with the buttons 
-
 const btn1 = document.getElementsByClassName("btn")[0];
 const btn2 = document.getElementsByClassName("btn")[1];
 const btn3 = document.getElementsByClassName("btn")[2];
@@ -67,6 +66,18 @@ nav3.addEventListener('click',function(event){
 nav4.addEventListener('dblclick',function(event){
 
     alert('Fun Bus time!');
-
+    newLink.innerHTML = 'Fun Bus!';
+    newLink.setAttribute('href','#');
+    newLink.style.color = '#212529';
+    newLink.style.fontSize = '1.6rem';
+    navigation.prepend(newLink);
 });
 
+const img = document.querySelector('img');
+
+// clicking top image. 
+img.addEventListener('dblclick', function(event){
+
+    alert('Being clicked!');
+
+});
