@@ -86,13 +86,15 @@ img.addEventListener('dblclick', function(event){
 img.addEventListener('mouseover',function(event){
 
        img.style.transition = '.5s'; 
-       img.hidden = true;
+       img.style.display = 'none';
        event.preventDefault();
+     
+      
        
-       img.addEventListener('mouseleave',function(event){
+     img.addEventListener('mouseleave',function(event){
         
-        img.style.transition = '.5s'; 
-        img.hidden = false;
+        img.style.transition = '.5s';
+        img.style.display = 'flex'; 
         event.preventDefault(); 
  
      });
