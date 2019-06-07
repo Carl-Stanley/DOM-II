@@ -87,14 +87,17 @@ img.addEventListener('mouseover',function(event){
     
        img.style.transition = '.5s'; 
        img.style.display = 'none';
-       event.preventDefault();      
+       event.preventDefault();   
+        
        //event.stopPropagation();
      img.addEventListener('mouseleave',function(event){
         
         img.style.transition = '.5s';
         img.style.display = 'flex'; 
         event.preventDefault(); 
- 
+       
+
+        
      });
 
 
