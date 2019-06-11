@@ -83,6 +83,8 @@ img.addEventListener('dblclick', function(event){
 });
 
 // nested events
+
+/* 
 img.addEventListener('mouseover',function(event){
     
        img.style.transition = '.5s'; 
@@ -102,5 +104,19 @@ img.addEventListener('mouseover',function(event){
 
 
  });
+*/ 
 
+img.addEventListener("mouseover", function(event) {
+    img.style.transition = ".5s";
+    img.style.opacity = 0;
+    event.preventDefault();
+  
+    //event.stopPropagation();
+  });
+  
+  img.addEventListener("mouseleave", function(event) {
+    img.style.transition = ".5s";
+    img.style.opacity = 1;
+    event.preventDefault();
+  });
  
